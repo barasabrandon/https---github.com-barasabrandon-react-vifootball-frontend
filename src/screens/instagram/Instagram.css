@@ -1,0 +1,160 @@
+.instagram-container {
+  width: 100%;
+  min-height: 100vh;
+  /* height: max-content; */
+  background-color: aliceblue;
+  /* padding: 20px; */
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.instagram-container-slider {
+  height: 500px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.instagram-container-slider-image-overlay {
+  height: 100%;
+  width: 100%;
+}
+
+.instagram-container-slider-text-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-container-slider-text {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.instagram-container-content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.instagram-container-content-card-text {
+  position: relative;
+  height: 300px;
+}
+
+.instagram-container-content-card-text-overlay {
+  position: absolute;
+  bottom: 0;
+  top: 30%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram-container-content-card-text-overlay-p {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+  flex: 1;
+}
+
+.player-name-container {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.instagram-container-content-card-text-overlay-footer {
+  display: flex;
+  gap: 20px;
+}
+
+.instagram-container-content-card {
+  background-color: white;
+  height: 300px;
+  position: relative;
+}
+
+.instagram-video-container {
+  width: 100%;
+  height: 100%;
+}
+
+.instagram-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instagram-video-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  bottom: 35%;
+  right: 0px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.instagram-video-play {
+  position: absolute;
+  bottom: 40%;
+  right: 40%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.instagram-video-play:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 2000ms;
+}
+
+.instagram-post-image {
+  width: 100%;
+  height: 100%;
+}
+
+.instagram-type-of-post {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 600px) {
+  .instagram-container-slider {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .instagram-container-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}

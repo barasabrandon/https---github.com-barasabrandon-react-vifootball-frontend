@@ -1,0 +1,152 @@
+.twitter-container {
+  min-height: 100vh;
+  background-color: white;
+  margin: 20px;
+}
+
+hr {
+  background-color: black;
+}
+
+.twitter-content-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+.twitter-players-list-container {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  height: 90vh;
+  border: 1px solid red;
+}
+
+.twitter-single-player-list-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 50px;
+  border-bottom: 3px solid white;
+}
+
+.twitter-single-player-list-details-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  height: 50px;
+}
+
+.twitter-players-list-container-avatar {
+  margin: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.twitter-players-list-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.twitter-player-profile {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding: 20px;
+  gap: 10px;
+  height: 90vh;
+}
+
+.twitter-player-profile-avatar-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.twitter-player-profile-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.twitter-player-profile-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.twitter-player-search-input {
+  border: 0px;
+  border-bottom: 1px solid lightskyblue;
+}
+
+.twitter-single-player-list-search-container {
+  height: 60px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+
+.twitter-players {
+  height: 80vh;
+  overflow: hidden;
+}
+
+.twitter-player-list-container {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.twitter-small-screen-footer-container {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .twitter-content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .twitter-container {
+    margin: 10px;
+  }
+
+  .twitter-players-list-container {
+    height: 30vh;
+    margin-top: 20px;
+  }
+
+  .twitter-player-profile {
+    height: 60vh;
+  }
+
+  .twitter-small-screen-footer-container {
+    display: flex;
+    height: 70px;
+    background-color: white;
+    bottom: 0;
+    position: sticky;
+    border-top: 1px solid wheat;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twitter-small-screen-footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+  }
+}
